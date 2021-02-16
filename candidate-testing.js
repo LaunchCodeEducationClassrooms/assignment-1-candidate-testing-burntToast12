@@ -48,7 +48,7 @@ function gradeQuiz(candidateAnswers) {
     status = "FAILED"
   }
 
-  console.log(`>>> Overall Grade: ${grade}% (${numberCorrect} of ${correctAnswers.length} responses correct) <<<\n>>> Status: ${status} <<<`)
+  console.log(`>>> Overall Grade: ${grade}% (${numberCorrect} of ${maxScore} responses correct) <<<\n>>> Status: ${status} <<<`)
   
   return grade;
 }
