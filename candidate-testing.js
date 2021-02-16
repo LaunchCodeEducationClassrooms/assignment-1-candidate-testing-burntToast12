@@ -48,7 +48,7 @@ let numberCorrect = 0;
   }
 
   console.log(`>>> Overall Grade: ${grade}% (${numberCorrect} of ${questions.length} responses correct) <<<\n>>> Status: ${status} <<<`)
-
+return grade;
 }
 
 
