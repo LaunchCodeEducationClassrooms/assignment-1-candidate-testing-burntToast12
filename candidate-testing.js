@@ -27,7 +27,7 @@ function askQuestion() {
     console.log(`Correct Answer: ${correctAnswers[i]}\n`)
 
   }
-
+  return candidateAnswers;
 }
 
 function gradeQuiz(candidateAnswers) {
