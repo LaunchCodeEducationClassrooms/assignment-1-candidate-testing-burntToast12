@@ -50,7 +50,8 @@ function gradeQuiz(candidateAnswers) {
 
   console.log(`>>> Overall Grade: ${grade}% (${numberCorrect} of ${correctAnswers.length} responses correct) <<<\n>>> Status: ${status} <<<`)
   
-  }
+  return grade;
+}
 
 
 function runProgram() {
