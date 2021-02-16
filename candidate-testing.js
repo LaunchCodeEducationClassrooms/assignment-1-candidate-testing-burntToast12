@@ -25,6 +25,7 @@ function askQuestion() {
   for (let i = 0; i < questions.length; i++){
     candidateAnswer[i] = input.question(questions[i] + "\nYour Answer: ");
     console.log(`Correct Answer: ${correctAnswers[i]}\n`)
+    
 
   }
  
@@ -37,7 +38,7 @@ function gradeQuiz(candidateAnswers) {
   
   for (let i = 0; i < correctAnswers.length; i++){
     if (correctAnswers[i].toLocaleString().toLowerCase() == candidateAnswer[i].toLocaleString().toLowerCase()){
-      numberCorrect = numberCorrect + 1
+      numberCorrect++
     }
   }
   let grade = numberCorrect / (questions.length) *100;
