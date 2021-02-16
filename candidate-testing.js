@@ -48,7 +48,7 @@ function gradeQuiz(candidateAnswers) {
   }
 
   console.log(`>>> Overall Grade: ${grade}% (${numberCorrect} of ${questions.length} responses correct) <<<\n>>> Status: ${status} <<<`)
-  
+
   return grade;
 }
 
@@ -59,6 +59,7 @@ function runProgram() {
   console.log("Hello " + candidateName + "! You must score 80% or higher to pass. Good Luck!\n");
   askQuestion();
   gradeQuiz(this.candidateAnswers);
+  grade = 0;
 }
 // Don't write any code below this line //
 // And don't change these or your program will not run as expected //
