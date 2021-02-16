@@ -38,8 +38,8 @@ function gradeQuiz(candidateAnswers) {
     }
   }
   
-  
-  let grade = (numberCorrect / (questions.length)) * 100;
+  let maxScore = 5;
+  let grade = numberCorrect / maxScore * 100;
   let status = "";
 
   if (grade >= 80){
